@@ -7,6 +7,7 @@ All code snippets throughout the entire site should relate to each other. The da
 ```graphql
 type User {
   id: ID! @unique
+  createdAt: DateTime!
   name: String!
   email: String! @unique
   isAdmin: Boolean @default(value: "false")
